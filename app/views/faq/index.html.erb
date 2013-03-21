@@ -1,0 +1,17 @@
+<% if !@faq_categories.blank? %>
+<ul>
+  <% for category in @faq_categories %>
+  <li>
+    <%= category.title %>
+    <%= image_tag category.image %>
+
+    <% if !category.questions.blank? %>
+      <% for question in category.questions %>
+        <%= question.subject %>
+        <%= question.answer %>
+      <% end %>
+    <% end %>
+  </li>
+  <% end %>
+</ul>
+<% end %>
