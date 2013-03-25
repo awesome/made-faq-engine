@@ -1,7 +1,7 @@
 if defined?(ActiveAdmin) and Faq.config.engine_active_admin
   ActiveAdmin.register Faq::Question do
     controller do
-      cache_sweeper Faq.config.category_cache_sweeper if Faq.config.category_cache_sweeper
+      cache_sweeper Faq.config.question_cache_sweeper if Faq.config.question_cache_sweeper
       defaults      :finder => :find_by_url
     end
 
