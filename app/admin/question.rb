@@ -27,7 +27,7 @@ if defined?(ActiveAdmin) and Faq.config.engine_active_admin
                     :hint => "The display order within the category"
       end
 
-      f.buttons
+      f.actions
     end
   end
 end

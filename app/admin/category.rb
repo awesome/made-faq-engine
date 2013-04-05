@@ -31,7 +31,7 @@ if defined?(ActiveAdmin) and Faq.config.engine_active_admin
                     :hint => "The display order on the FAQ page"
       end
 
-      f.buttons
+      f.actions
     end
   end
 end
